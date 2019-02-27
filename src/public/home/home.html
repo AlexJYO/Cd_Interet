@@ -1,0 +1,12 @@
+<div class="container">
+	<div id="slides_control">
+		<div>
+			<uib-carousel interval="homeCtrl.setTime">
+		        <uib-slide ng-repeat="slide in homeCtrl.slides" active="slide.active">
+			          <img ng-src="{{homeCtrl.apiImag + homeCtrl.slides[$index].nombre}}" class="img-responsibe">
+			         
+		        </uib-slide>
+	      </uib-carousel>
+		</div>
+    </div>
+</div>
