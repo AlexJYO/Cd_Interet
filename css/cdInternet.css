@@ -56,7 +56,9 @@ body {
 #nav-list a span {
   font-size: 1.8em;
 }
-
+.active {
+  background: white;
+}
 /*#phone {
   margin-top: 5px;
 }

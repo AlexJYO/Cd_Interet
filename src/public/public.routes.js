@@ -20,6 +20,18 @@
         templateUrl: 'src/public/home/home.html',
         controller: 'HomeController',
         controllerAs: 'homeCtrl'
+      })
+      .state('public.servicios',{
+        url: '/Servicios',
+        templateUrl: 'src/public/servicios/serv.html'
+      })
+      .state('public.productos',{
+        url: '/Productos',
+        templateUrl: 'src/public/productos/prod.html'
+      })
+      .state('public.informacion',{
+        url: '/informacion',
+        templateUrl: 'src/public/informacion/info.html'
       });
   }
 })();

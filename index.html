@@ -38,22 +38,22 @@
             </button>
           </div>
 
-          <div id="collapsable-nav" class="collapse navbar-collapse">
+          <div id="collapsable-nav" class="collapse navbar-collapse" >
             <ul id="nav-list" class="nav navbar-nav navbar-right">
-              <li id="navHomeButton" class="visible-xs">
-                <a href="index.html">
+              <li  class="visible-xs">
+                <a ui-sref="public.home" ui-sref-active="active">
                   <span class="glyphicon glyphicon-home"></span> Home</a>
               </li>
-              <li id="navMenuButton" ui-sref-active="active">
-                <a ui-sref="#">
+              <li>
+                <a ui-sref="public.servicios" ui-sref-active="active">
                   <span class="glyphicon glyphicon-wrench"></span><br class="hidden-xs"> Servicios</a>
               </li>
               <li>
-                <a ui-sref="#">
+                <a ui-sref="public.productos" ui-sref-active="active">
                   <span class="glyphicon glyphicon-hdd"></span><br class="hidden-xs"> Productos</a>
               </li>
               <li>
-                <a ui-sref="#">
+                <a ui-sref="public.informacion" ui-sref-active="active">
                   <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> Información</a>
               </li>
 
@@ -108,26 +108,26 @@
       <div class="container-fluid">
         <div class="row">
           <section id="hours" class="col-sm-4">
-            <span>Hours:</span><br>
-            Sun-Thurs: 11:15am - 10:00pm<br>
-            Fri: 11:15am - 2:30pm<br>
-            Saturday Closed
+            <span>Horario:</span><br>
+            Lunes - Viernes: <br>
+            Sabados<br>
+            Domingo
             <hr class="visible-xs">
           </section>
           <section id="address" class="col-sm-4">
-            <span>Address:</span><br>
-            7105 Reisterstown Road<br>
-            Baltimore, MD 21215
-            <p>* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>
+            <span>Direccion:</span><br>
+            Blvd. Faja de Oro<br>
+            Salamanca, Gto
+            <p>* No nos hacemos responsables por productos con mas de  un mes. No contamos con servicio de bodega. Gracias </p>
             <hr class="visible-xs">
           </section>
           <section id="testimonials" class="col-sm-4">
-            <p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
-            <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+            <p>"Exelente servicio, la calida de de las impresiones es genial"</p>
+            <p>"Siempre confiable y muy atentos"</p>
           </section>
         </div>
         <div class="text-center">
-          &copy; Copyright David Chu's China Bistro 2016 |
+          &copy;  CD Internet
           <a ui-sref="admin.auth">Admin</a></div>
       </div>
     </footer>
@@ -149,6 +149,7 @@
 	<script src="src/public/public.module.js"></script>
 	<script src="src/public/public.routes.js"></script>
 	<script src="src/public/home/home.controller.js"></script>
+  <script src="src/public/blur.js"></script>
 
 
 	<script src="src/common/common.module.js"></script>
