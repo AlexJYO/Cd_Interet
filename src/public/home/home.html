@@ -1,15 +1,46 @@
-<div class="container">
+<div class="container-fluid">
 	<div id="slides_control">
 		<div>
 			<uib-carousel interval="homeCtrl.setTime">
 		        <uib-slide ng-repeat="slide in homeCtrl.slides" active="slide.active">
-			          <img ng-src="{{homeCtrl.apiImag + homeCtrl.slides[$index].nombre}}" class="img-responsibe">
+			          <img id="img-style-slide" 
+			          ng-src="{{homeCtrl.apiImag + homeCtrl.slides[$index].nombre}}" class="img-responsibe" >
 			         
 		        </uib-slide>
 	      </uib-carousel>
 		</div>
     </div>
-    
-    
+
+	<div class="itemsHome" class="row">
+	    <div class="col-sm-6 col-xs-12">
+	    	<a ui-sref="public.servicios">
+	    		<div id="home-servicios">
+	    			<span>Servicios</span>
+	    		</div>
+	    	</a>
+	    </div>
+	    <div class="col-sm-6 col-xs-12">
+	    	<a ui-sref="public.productos">
+	    		<div id="home-productos">
+	    			<span>Productos</span>
+	    		</div>
+	    	</a>
+	    </div>
+	    <div class="col-xs-12">
+	    	<a ui-sref="#">
+	    		<div id="home-anuncios">
+	    			<span>Anuncios</span>
+	    		</div>
+	    	</a>
+	    </div>
+	    <div class="col-xs-12">
+	    	<a href="https://www.google.com/maps/place/CDInternet/@20.578277,-101.20057,15z/data=!4m5!3m4!1s0x0:0x9d246b6f4d7037b1!8m2!3d20.578277!4d-101.20057?hl=es-US" target="_blank">
+	    			<div id="home-mapa">
+	    			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3735.239321380649!2d-101.20276404917706!3d20.578282008311405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842c850417147225%3A0x9d246b6f4d7037b1!2sCDInternet!5e0!3m2!1ses-419!2smx!4v1553297887725" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+	    			<span>Mapa</span>
+	    		</div>
+	    	</a>
+	    </div>
+	</div>
 
 </div>

@@ -3,7 +3,7 @@ body {
   color: #fff;
   background-color: #EBF5FB;
   font-family: 'Oxygen', sans-serif;
-  padding-top: 180px;
+  padding-top: 150px;
 }
 
 .initial-loading {
@@ -15,12 +15,13 @@ body {
   background-color: #BFC9CA;
   border-radius: 0;
   border: 0;
+
 }
 
 #logo-img {
-  background: url('../imag/logoCd150.png') no-repeat;
-  width: 150px;
-  height: 150px;
+  background: url('../imag/logoCd100.png') no-repeat;
+  width: 100px;
+  height: 100px;
   margin: 10px 15px 10px 0;
 }
 
@@ -37,7 +38,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   line-height: .75;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
@@ -79,6 +80,7 @@ body {
   clear: both;
   margin-top: -65px;
 }
+
 /* END HEADER */
 
 /* FOOTER */
@@ -87,7 +89,7 @@ body {
   padding-top: 35px;
   padding-bottom: 30px;
   background-color: #222;
-  border-top: 0;
+  border-top: ;
 }
 .panel-footer div.row {
   margin-bottom: 35px;
@@ -99,7 +101,7 @@ body {
   font-size: 1.3em;
 }
 #address p {
-  color: #557c3e;
+  color: red;
   font-size: .8em;
   line-height: 1.8;
 }
@@ -124,7 +126,7 @@ a[ui-sref="admin.auth"] {
     margin: 5px 5px 5px 0;
   }
   body {
-    padding-top: 120px; 
+    padding-top: 130px; 
   }
   .navbar-brand h1 { /* Restaurant name */
     padding-top: 10px;
@@ -141,7 +143,7 @@ a[ui-sref="admin.auth"] {
     margin: 5px 5px 5px 0;
   }
   body {
-    padding-top: 100px; 
+    padding-top: 110px; 
   }
   /* End Header */
 }

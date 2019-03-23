@@ -2,5 +2,99 @@ h2 {
 	color: black;
 	text-align: center;
 }
+.carousel {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 25vw;
+	margin-bottom: 20px;
 
+}
+#img-style-slide{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: 25vw;
 
+}
+.itemsHome {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.itemsHome > div {
+	padding-right: 0px;
+	padding-left: 0px; 
+}
+.itemsHome div:nth-child(1) {
+	padding-right: 8px;
+}
+.itemsHome div:nth-child(2) {
+	padding-left: 8px;
+}
+#home-servicios, #home-productos, #home-anuncios, #home-mapa {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+
+#home-servicios:hover, #home-productos:hover, #home-anuncios:hover, #home-mapa:hover {
+  box-shadow: 0 1px 5px 1px blue;
+}
+
+#home-servicios {
+  background: url('../imag/home/servicios.jpg') no-repeat;
+  background-position: left;
+  width: 100%;
+}
+#home-productos {
+  background: url('../imag/home/productos.jpg') no-repeat;
+  background-position: left;
+}
+#home-anuncios {
+  background: url('../images/specials-tile.jpg') no-repeat;
+  background-position: center;
+}
+
+#home-servicios span, #home-productos span, #home-anuncios span, #home-mapa span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+@media (max-width: 767px) {
+	.itemsHome div:nth-child(1) {
+		padding-right: 0px;
+	}
+		.itemsHome div:nth-child(2) {
+		padding-left: 0px;
+	}
+}
+@media (max-width: 991px) {
+	.carousel {
+		height: 40vw;
+
+	}
+	#img-style-slide{
+		height: 40vw;
+	}
+}
+@media (max-width: 479px)
+{
+	.carousel {
+		height: 60vw;
+	}
+	#img-style-slide{
+		height: 60vw;
+	}
+}
