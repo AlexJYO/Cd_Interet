@@ -1,9 +1,15 @@
 h2 {
-	color: black;
+	color: gray;
 	text-align: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  font-size: 2.5em;
+  font-family: 'Verdana', sans-serif;
+  font-weight: bold;
 }
+/* Home */
 .carousel {
-	width: 90%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	height: 25vw;
@@ -18,7 +24,7 @@ h2 {
 
 }
 .itemsHome {
-	width: 90%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 
@@ -40,25 +46,14 @@ h2 {
   position: relative;
   border: 2px solid #3F0C1F;
   overflow: hidden;
+  padding-right: 0px;
 }
 
 #home-servicios:hover, #home-productos:hover, #home-anuncios:hover, #home-mapa:hover {
   box-shadow: 0 1px 5px 1px blue;
 }
 
-#home-servicios {
-  background: url('../imag/home/servicios.jpg') no-repeat;
-  background-position: left;
-  width: 100%;
-}
-#home-productos {
-  background: url('../imag/home/productos.jpg') no-repeat;
-  background-position: left;
-}
-#home-anuncios {
-  background: url('../images/specials-tile.jpg') no-repeat;
-  background-position: center;
-}
+
 
 #home-servicios span, #home-productos span, #home-anuncios span, #home-mapa span {
   position: absolute;
@@ -72,29 +67,167 @@ h2 {
   color: #fff;
   opacity: .8;
 }
-@media (max-width: 767px) {
-	.itemsHome div:nth-child(1) {
-		padding-right: 0px;
-	}
-		.itemsHome div:nth-child(2) {
-		padding-left: 0px;
-	}
-}
-@media (max-width: 991px) {
-	.carousel {
-		height: 40vw;
 
-	}
-	#img-style-slide{
-		height: 40vw;
-	}
+
+
+
+/* servicios  y productos*/
+
+#itemsSer{
+  color: black;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
 }
-@media (max-width: 479px)
+
+#itemsSer > div {
+  
+  height: 355px;
+
+}
+#item1Img {
+  background: url('../imag/servicios/img1.jpg') no-repeat center;
+
+}
+#item2Img {
+  background: url('../imag/servicios/img2.jpg') no-repeat center;
+}
+#item3Img {
+  background: url('../imag/servicios/img3.jpg') no-repeat center;
+}
+#itemInf {
+  padding-top: 30px; 
+}
+#itemInf span:nth-child(1) {
+  font-size: 1.5em;
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  #home-servicios {
+     background: url('../imag/home/servicios560.jpg') no-repeat;
+  }
+  #home-productos {
+    background: url('../imag/home/productos560.jpg') no-repeat;
+  }
+
+
+
+
+  #servicios-content .jumbotron {
+    background: url('../imag/servicios/internet1200.jpg') no-repeat;
+    height: 499px;
+  }
+
+
+
+
+ #productos-content .jumbotron {
+    background: url('../imag/productos/productos1200.png') no-repeat;
+    height: 563px;
+  }
+
+
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+  #home-servicios {
+     background: url('../imag/home/servicios460.jpg') no-repeat;
+  }
+  #home-productos {
+    background: url('../imag/home/productos460.jpg') no-repeat;
+  }
+
+
+
+
+   #servicios-content .jumbotron {
+    background: url('../imag/servicios/internet992.jpg') no-repeat;
+    height: 413px;
+  }
+  
+
+
+
+
+  #productos-content .jumbotron {
+      background: url('../imag/productos/productos992.png') no-repeat;
+      height: 465px;
+    }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+   #home-servicios {
+     background: url('../imag/home/servicios360.jpg') no-repeat;
+  }
+  #home-productos {
+    background: url('../imag/home/productos360.jpg') no-repeat;
+  }
+
+
+
+   #servicios-content .jumbotron {
+    background: url('../imag/servicios/internet767.jpg') no-repeat;
+    height: 319px;
+  }
+  
+
+
+
+
+  #productos-content .jumbotron {
+        background: url('../imag/productos/productos767.png') no-repeat;
+        height: 359px;
+      }
+
+}
+/********** Extra small devices only **********/
+@media (min-width: 479px) and (max-width: 767px){
+ 
+  
+
+
+  .carousel {
+    height: 45vw;
+  }
+  #img-style-slide{
+    height: 45vw;
+  }
+.itemsHome div:nth-child(1) {
+    padding-right: 0px;
+  }
+  .itemsHome div:nth-child(2) {
+    padding-left: 0px;
+  }
+
+
+.container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+   
+   
+}
+@media (max-width: 478px)
 {
-	.carousel {
-		height: 60vw;
-	}
-	#img-style-slide{
-		height: 60vw;
-	}
+  .carousel {
+    height: 60vw;
+  }
+  #img-style-slide{
+    height: 60vw;
+  }
+
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
 }
+
