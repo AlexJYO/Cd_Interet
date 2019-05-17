@@ -22,7 +22,7 @@
       <nav id="header-nav" class="navbar navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
-            <a href="index.html" class="pull-left visible-md visible-lg">
+            <a href="index.html" class="pull-left visible-sm visible-md visible-lg">
               <div id="logo-img" alt="Logo image"></div>
             </a>
 
@@ -43,19 +43,23 @@
             <ul id="nav-list" class="nav navbar-nav navbar-right">
               <li  class="visible-xs">
                 <a ui-sref="public.home" ui-sref-active="active">
-                  <span class="glyphicon glyphicon-home"></span> Home</a>
+                 <!-- <span class="glyphicon glyphicon-home"></span>--> Home</a>
               </li>
               <li>
                 <a ui-sref="public.servicios" ui-sref-active="active">
-                  <span class="glyphicon glyphicon-wrench"></span><br class="hidden-xs"> Servicios</a>
+                  <!--<span class="glyphicon glyphicon-wrench"></span><br class="hidden-xs"> -->Servicios</a>
               </li>
               <li>
                 <a ui-sref="public.productos" ui-sref-active="active">
-                  <span class="glyphicon glyphicon-hdd"></span><br class="hidden-xs"> Productos</a>
+                 <!-- <span class="glyphicon glyphicon-hdd"></span><br class="hidden-xs"> -->Productos</a>
+              </li>
+              <li>
+                <a ui-sref="/*" ui-sref-active="active">
+                 <!-- <span class="glyphicon glyphicon-hdd"></span><br class="hidden-xs"> -->Noticias</a>
               </li>
               <li>
                 <a ui-sref="public.informacion" ui-sref-active="active">
-                  <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> Acerca de</a>
+                 <!-- <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> -->Nosostros</a>
               </li>
 
 
@@ -119,7 +123,9 @@
             <span>Direccion:</span><br>
             Blvd. Faja de Oro<br>
             Salamanca, Gto
-            <p>* No nos hacemos responsables por productos con mas de  un mes. No contamos con servicio de bodega. Gracias </p>
+            <p>* No nos hacemos responsables por productos con mas de  un mes. No contamos con servicio de bodega. Gracias
+             </p>
+             
             <hr class="visible-xs">
           </section>
           <section id="testimonials" class="col-sm-4">
@@ -151,12 +157,12 @@
 	<script src="src/public/public.module.js"></script>
 	<script src="src/public/public.routes.js"></script>
 	<script src="src/public/home/home.controller.js"></script>
-  <script src="src/public/blur.js"></script>
  
 
 	<script src="src/common/common.module.js"></script>
 	<script src="src/common/loading/loading.component.js"></script>
 	<script src="src/common/loading/loading.interceptor.js"></script>
+  
 
 
 

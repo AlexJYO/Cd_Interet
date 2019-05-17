@@ -1,7 +1,7 @@
 h2 {
-	color: gray;
+	color: black;
 	text-align: center;
-  margin-top: 0px;
+  margin-top: -60px;
   margin-bottom: 50px;
   font-size: 2.5em;
   font-family: 'Verdana', sans-serif;
@@ -9,11 +9,13 @@ h2 {
 }
 /* Home */
 .carousel {
-	width: 100%;
-	margin-left: auto;
+	width: 110%;
+	margin-left: -15px;
 	margin-right: auto;
 	height: 25vw;
 	margin-bottom: 20px;
+  margin-top: -81px;
+
 
 }
 #img-style-slide{
@@ -98,6 +100,7 @@ h2 {
 }
 #itemInf {
   padding-top: 30px; 
+
 }
 #itemInf span:nth-child(1) {
   font-size: 1.5em;
@@ -223,6 +226,13 @@ h2 {
   }
   #img-style-slide{
     height: 60vw;
+  }
+
+  .itemsHome div:nth-child(1) {
+    padding-right: 0px;
+  }
+  .itemsHome div:nth-child(2) {
+    padding-left: 0px;
   }
 
   .container .jumbotron {
